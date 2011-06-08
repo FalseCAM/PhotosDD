@@ -1,0 +1,13 @@
+	CMAKE_MINIMUM_REQUIRED(VERSION 2.8.4)
+	
+ 	########### Project name ###########
+ 	PROJECT(PhotosDD)
+ 	#SET(EASYIMAGESIZER_MAJOR "3")
+ 	#SET(EASYIMAGESIZER_MINOR "0")
+ 	#SET(EASYIMAGESIZER_PATCH "1")
+ 	#SET(VERSION "${EASYIMAGESIZER_MAJOR}.${EASYIMAGESIZER_MINOR}.${EASYIMAGESIZER_PATCH}")
+ 	#SET(PACKAGE easyimagesizer)
+   
+  ########### Subdirectories ###############
+
+	ADD_SUBDIRECTORY( src ) 

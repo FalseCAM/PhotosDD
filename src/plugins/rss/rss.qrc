@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>rss_48.png</file>
+        <file>rss_64.png</file>
+        <file>rss.png</file>
+    </qresource>
+</RCC>

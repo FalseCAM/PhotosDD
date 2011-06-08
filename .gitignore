@@ -1,0 +1,14 @@
+
+/bin
+/CMakeFiles
+/.cproject
+/.project
+/cmake_install.cmake
+/CMakeCache.txt
+/Makefile
+/src/Makefile
+/src/CMakeFiles
+/src/cmake_install.cmake
+/src/plugins/Makefile
+/src/plugins/CMakeFiles
+/src/plugins/cmake_install.cmake

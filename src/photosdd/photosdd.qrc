@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>photosdd.ico</file>
+        <file alias="photosdd">icons/photosdd.png</file>
+    </qresource>
+</RCC>

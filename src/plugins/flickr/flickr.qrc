@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>flickr.png</file>
+        <file>flickr_48.png</file>
+        <file>flickr_64.png</file>
+    </qresource>
+</RCC>

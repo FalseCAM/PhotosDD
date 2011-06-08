@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>picasa.png</file>
+        <file>picasa_48.png</file>
+        <file>picasa_64.png</file>
+    </qresource>
+</RCC>
