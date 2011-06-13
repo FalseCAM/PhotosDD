@@ -22,5 +22,5 @@
 	ENDIF(NOT CMAKE_BUILD_TYPE)
 
 	ADD_SUBDIRECTORY( photosdd )
-	ADD_SUBDIRECTORY( photosdd-gui )
+	ADD_SUBDIRECTORY( photosdd_gui )
 	ADD_SUBDIRECTORY( plugins )
