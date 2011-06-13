@@ -22,9 +22,9 @@
 #include "flickr.h"
 #include "ui_flickr.h"
 #include "photosdd/photosdd.h"
-#include <QtWebkit/QWebPage>
-#include <QtWebkit/QWebElementCollection>
-#include <QtWebkit/QWebFrame>
+#include <QtWebKit/QWebPage>
+#include <QtWebKit/QWebElementCollection>
+#include <QtWebKit/QWebFrame>
 #include <QtCore/QRegExp>
 
 Flickr::Flickr(QWidget *parent) :
