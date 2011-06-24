@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	QApplication app(argc, argv);
 	QCoreApplication::setOrganizationName("FalseCAM");
 	QCoreApplication::setOrganizationDomain("www.falsecam.net");
-	QCoreApplication::setApplicationName("PhotosDD-GUI");
+	QCoreApplication::setApplicationName("PhotosDD");
 	QCoreApplication::setApplicationVersion("0.2.0");
 	app.setWindowIcon(QIcon(":/icon/logo"));
 

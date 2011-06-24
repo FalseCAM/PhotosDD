@@ -51,6 +51,11 @@ void PluginLoader::destroy() {
 
 void PluginLoader::addPlugin(PhotosDDPlugin *plugin) {
 	if (plugin) {
+		foreach(PhotosDDPlugin * plugin_, pluginList)
+			{
+				if (plugin_->getName() == plugin->getName())
+					return;
+			}
 		pluginList.append(plugin);
 	}
 }
@@ -208,8 +213,8 @@ void PluginLoader::loadPlugins(QString dir) {
 			QObject *plugin = pluginLoader.instance();
 			if (plugin) {
 				// loads Plugins
-				PhotosDDPlugin *plugin_ = qobject_cast<
-						PhotosDDPlugin *> (plugin);
+				PhotosDDPlugin *plugin_ = qobject_cast<PhotosDDPlugin *> (
+						plugin);
 				if (plugin_) {
 					addPlugin(plugin_);
 				} else {
