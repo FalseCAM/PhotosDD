@@ -170,6 +170,12 @@ QList<PhotosDDPlugin *> PluginLoader::getActivatedPlugins() {
 void PluginLoader::loadPlugins() {
 	// Loads Plugins in plugins dir
 	QDir pluginsDir(QCoreApplication::applicationDirPath());
+	loadPlugins(pluginsDir.currentPath());
+	foreach (QString path, QCoreApplication::libraryPaths())
+		{
+			loadPlugins(path);
+			loadPlugins(path + QCoreApplication::applicationName().toLower());
+		}
 #if defined(Q_OS_WIN)
 	if (pluginsDir.dirName().toLower() == "debug"
 			|| pluginsDir.dirName().toLower() == "release") {
@@ -182,9 +188,19 @@ void PluginLoader::loadPlugins() {
 		pluginsDir.cdUp();
 		pluginsDir.cdUp();
 	}
+#elif defined(Q_OS_LINUX)
+	loadPlugins("/usr/lib/" + QCoreApplication::applicationName().toLower());
+	loadPlugins("/usr/lib64/" + QCoreApplication::applicationName().toLower());
 #endif
+	loadPlugins(pluginsDir.currentPath());
+}
 
-	pluginsDir.cd("plugins");
+void PluginLoader::loadPlugins(QString dir) {
+	QDir pluginsDir(dir);
+	if (pluginsDir.exists(dir)) {
+		if (!pluginsDir.cd("plugins"))
+			return;
+	}
 
 	foreach (QString fileName, pluginsDir.entryList(QDir::Files))
 		{
@@ -192,8 +208,8 @@ void PluginLoader::loadPlugins() {
 			QObject *plugin = pluginLoader.instance();
 			if (plugin) {
 				// loads Plugins
-				PhotosDDPlugin *plugin_ = qobject_cast<PhotosDDPlugin *> (
-						plugin);
+				EasyImageSizer3Plugin *plugin_ = qobject_cast<
+						EasyImageSizer3Plugin *> (plugin);
 				if (plugin_) {
 					addPlugin(plugin_);
 				} else {

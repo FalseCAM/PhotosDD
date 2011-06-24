@@ -33,19 +33,19 @@
 			DESTINATION bin
 			PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
 	install(FILES "bin/plugins/libatom.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/libfile.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/libflickr.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/libfotocommunity.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/libhtml.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/libpicasa.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(FILES "bin/plugins/librss.so"
-			DESTINATION "lib/easyimagesizer3/plugins")
+			DESTINATION "lib/photosdd/plugins")
 	install(DIRECTORY "photosdd/include/photosdd"
 			DESTINATION "include"
 			FILES_MATCHING PATTERN "*.h")
