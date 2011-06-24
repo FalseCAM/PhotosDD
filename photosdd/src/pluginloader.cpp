@@ -208,8 +208,8 @@ void PluginLoader::loadPlugins(QString dir) {
 			QObject *plugin = pluginLoader.instance();
 			if (plugin) {
 				// loads Plugins
-				EasyImageSizer3Plugin *plugin_ = qobject_cast<
-						EasyImageSizer3Plugin *> (plugin);
+				PhotosDDPlugin *plugin_ = qobject_cast<
+						PhotosDDPlugin *> (plugin);
 				if (plugin_) {
 					addPlugin(plugin_);
 				} else {
