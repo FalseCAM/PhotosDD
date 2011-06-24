@@ -7,6 +7,8 @@ include(${QT_USE_FILE})
 
 include_directories( ${PHOTOSDD_GUI_BINARY_DIR} ${QT_INCLUDE_DIR} )
 
+set( EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/bin" )
+
 set(PHOTOSDD_GUI_SRCS
     main.cpp
     mainwindow.cpp

@@ -33,6 +33,3 @@ add_library(photosdd SHARED ${PHOTOSDD_LIB_SRCS}
 							${PHOTOSDD_LIB_RC_SRCS}
 							${PHOTOSDD_LIB_UIS_H})
 target_link_libraries(photosdd ${QT_LIBRARIES})
-install(TARGETS photosdd DESTINATION lib)
-install(DIRECTORY "include/photosdd" DESTINATION include
-		FILES_MATCHING PATTERN "*.h")

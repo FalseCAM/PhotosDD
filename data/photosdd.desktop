@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PhotosDD
+Comment=Web Images Downloader
+Exec=/usr/bin/photosdd-gui
+Icon=photosdd
+Type=Application
+Categories=Qt;Network;FileTransfer;
+Name[en_GB]=PhotosDD
